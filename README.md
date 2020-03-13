@@ -2,7 +2,8 @@
 ### aws ec2, RDS 생성 및 연결
 
 사용환경: ec2 리눅스<br> 
-<h5>3/12-</h5> 나는 window환경을 사용하므로 'putty' 라는 프로그램 사용하여 aws 연결 성공.<br>
+<h5>3/12-</h5> 나는 window환경을 사용하므로 'putty' 라는 프로그램 사용하여 aws 연결 성공. <br>
+        출처:https://blog.naver.com/zion830/221353353266<br>
         aws의 데이터베이스는 Mysql으로 생성. mysql Workbench로 생성한 aws DB에 접속하려 했으나, 자꾸 오류남.<br>
         (연결이 안되면 보안그룹 문제라고들 하는데, 같은 보안그룹으로 ec2 인스턴트 연결은 잘되어서 본인의 workbench 사용 미숙으로 알고 다른 방법 모색함.<br>
         진짜 이걸로 3~4시간 가까이 씨름한듯.)<br>
