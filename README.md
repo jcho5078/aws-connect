@@ -10,7 +10,7 @@
 <br>
 <h5>3/13-</h5> 사용했던 putty를 이용하여 aws에 연결을하고 ec2 인스턴트에 직접 mysql 설치를하여 mysql 접속 성공.<br>
         putty를 사용하여 aws에 접속한 후, putty의 CLI 터미널 창에서 mysql 설치함. 리눅스 입력 커맨드와 같음.<br>
-        1.mysql -v 입력하여 해당 인스턴트에서 mysql 설치 확인.<br>
-        2.설치가 안되어있다면 sudo yum install mysql 입력하여 mysql 설치.<br>
-        3.mysql -u [마스터 사용자 이름] -p -h [RDS 인스턴스 엔드포인트] 입력하여 생성한 RDS에 연결.<br>
-        4.RDS 생성시 설정한 비밀번호 입력 후 RDS의 mysql에 로그인.
+        1. mysql -v 입력하여 해당 인스턴트에서 mysql 설치 확인.<br>
+        2. 설치가 안되어있다면 sudo yum install mysql 입력하여 mysql 설치.<br>
+        3. mysql -u [마스터 사용자 이름] -p -h [RDS 인스턴스 엔드포인트] 입력하여 생성한 RDS에 연결.<br>
+        4. RDS 생성시 설정한 비밀번호 입력 후 RDS의 mysql에 로그인.
