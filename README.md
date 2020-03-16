@@ -13,4 +13,15 @@
         1. mysql -v 입력하여 해당 인스턴트에서 mysql 설치 확인.<br>
         2. 설치가 안되어있다면 sudo yum install mysql 입력하여 mysql 설치.<br>
         3. mysql -u [마스터 사용자 이름] -p -h [RDS 인스턴스 엔드포인트] 입력하여 생성한 RDS에 연결.<br>
-        4. RDS 생성시 설정한 비밀번호 입력 후 RDS의 mysql에 로그인.
+        4. RDS 생성시 설정한 비밀번호 입력 후 RDS의 mysql에 로그인.<br>
+### aws ec2 자바, 톰캣 설치, 파일 업로드
+<h5>3/16-</h5> (필자는 리눅스사용)aws의 우분투에서 sudo apt-get install openjdk-8-jre 로 자바 설치<br>
+               (jre설치후 우분투에서 java -version 입력하여 설치 및 버전 확인.<br>
+               aws 우분투에서 sudo apt-get install tomcat8 입력하여 톰캣 설치.<br>
+               sudo ufw allow (톰캣 포트번호)/tcp 로 방화벽에서 톰캣의 외부접속을 허용한다.<br>
+               sudo service tomcat8 start 로 톰캣 실행.<br>
+               인스턴스의 /var/lib/tomcat8/webapps 경로에 스프링 war파일 넣어야기에 우분투에서 해당 경로에 권한 부여 해야함. <br>
+               실행시킨 상태에서 fileZilla나 winscp로 aws ec2생성시 받은 개인키로 파일 업로드.<br>
+               후에 https://aws인스턴스ip:8080/프로젝트명 을 웹 주소창에 쓰면 본인 결과물 배포완료.<br>
+               (8080은 톰캣 기본 ip이므로 본인 인스턴트의 톰캣 ip
+               참고: https://windosakacastle.tistory.com/17?category=691705
