@@ -15,7 +15,7 @@
         3. mysql -u [마스터 사용자 이름] -p -h [RDS 인스턴스 엔드포인트] 입력하여 생성한 RDS에 연결.<br>
         4. RDS 생성시 설정한 비밀번호 입력 후 RDS의 mysql에 로그인.<br>
 ### aws ec2 자바, 톰캣 설치, 파일 업로드
-<h5>3/16-</h5> (필자는 리눅스사용)aws의 우분투에서 sudo apt-get install openjdk-8-jre 로 자바 설치<br>
+<h5>3/16-</h5> (필자는 리눅스사용)aws의 우분투에서 sudo apt-get install openjdk-8-jre 로 자바 설치(apt-get안된다면 yum사용)<br> 
                (jre설치후 우분투에서 java -version 입력하여 설치 및 버전 확인.<br>
                aws 우분투에서 sudo apt-get install tomcat8 입력하여 톰캣 설치.<br>
                sudo ufw allow (톰캣 포트번호)/tcp 로 방화벽에서 톰캣의 외부접속을 허용한다.<br>
